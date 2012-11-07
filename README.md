@@ -6,11 +6,9 @@ all features against earlier versions.
 
 Pull requests to add support for other operating systems are welcome.
 
-### Authors
-* Scott Smerchek <scott.smerchek@softekinc.com>
-
 ### Usage
 
     include java7
 
-
+### Author
+* Scott Smerchek <scott.smerchek@softekinc.com>
