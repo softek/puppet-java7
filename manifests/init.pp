@@ -12,7 +12,7 @@ class java7 {
       include apt
       
       apt::source { 'webupd8team': 
-	      location          => "http://ppa.launchpad.net/webupd8team/java/ubuntu",
+        location          => "http://ppa.launchpad.net/webupd8team/java/ubuntu",
         release           => "precise",
         repos             => "main",
         key               => "EEA14886",
