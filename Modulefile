@@ -1,5 +1,5 @@
 name 'softek-java7'
-version '0.0.2'
+version '0.1.0'
 source 'git://github.com/softek/puppet-java7.git'
 author 'Scott Smerchek'
 license ''
