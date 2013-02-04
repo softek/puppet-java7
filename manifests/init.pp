@@ -15,7 +15,6 @@ class java7 {
 	location          => "http://ppa.launchpad.net/webupd8team/java/ubuntu",
         release           => "precise",
         repos             => "main",
-        #required_packages => "debian-keyring debian-archive-keyring",
         key               => "EEA14886",
         key_server        => "keyserver.ubuntu.com",
         include_src       => true
