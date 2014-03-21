@@ -6,7 +6,9 @@
 #  apt
 # Sample Usage:
 #  include java7
-class java7 {
+class java7 (
+  $include_src = true,
+) {
   case $::operatingsystem {
     debian: {
       include apt
@@ -17,7 +19,7 @@ class java7 {
         repos             => "main",
         key               => "EEA14886",
         key_server        => "keyserver.ubuntu.com",
-        include_src       => true
+        include_src       => $include_src,
       }
       package { 'oracle-java7-installer':
         responsefile => '/tmp/java.preseed',
