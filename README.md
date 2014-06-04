@@ -10,6 +10,10 @@ Pull requests to add support for other operating systems are welcome.
 ### Usage
 
     include java7
+    
+or
+
+    class { 'java7': }
 
 ### Author
 * Scott Smerchek <scott.smerchek@softekinc.com>
