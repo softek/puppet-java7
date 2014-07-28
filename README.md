@@ -15,6 +15,14 @@ or
 
     class { 'java7': }
 
+The default behavior is to install java7. It will not automatically upgrade. If you would like to upgrade java7, you can use the `ensure` parameter:
+
+    class { 'java7':
+      ensure => 'latest'
+    }
+
+Keep in mind that the webupd8 team's java7 package does not keep historical versions of the java installer, so you cannot specify a specific version of java to install at this time.
+
 ### Author
 * Scott Smerchek <scott.smerchek@softekinc.com>
 

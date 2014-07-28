@@ -8,6 +8,7 @@
 #  include java7
 class java7 (
   $include_src = true,
+  $ensure = 'installed',
 ) {
   case $::operatingsystem {
     debian: {
@@ -22,6 +23,7 @@ class java7 (
         include_src       => $include_src,
       }
       package { 'oracle-java7-installer':
+        ensure       => $ensure,
         responsefile => '/tmp/java.preseed',
         require      => [
                           Apt::Source['webupd8team'],
@@ -34,6 +36,7 @@ class java7 (
 
       apt::ppa { 'ppa:webupd8team/java': }
       package { 'oracle-java7-installer':
+        ensure       => $ensure,
         responsefile => '/tmp/java.preseed',
         require      => [
                           Apt::Ppa['ppa:webupd8team/java'],
